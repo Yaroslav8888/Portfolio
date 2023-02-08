@@ -1,0 +1,257 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    color:black;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+
+}
+*{
+    box-sizing: border-box;
+}
+.logo img{
+    max-width: 145px;
+}
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+p{
+    line-height: 1.4em;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    line-height: 1.4em;
+    margin: 0;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+    
+}
+.features{
+    padding: 70px;
+    margin: 0 auto;
+}
+.intro{
+    font-weight: 400;
+    margin: 30px 0;
+}
+.hero-image{
+    width: 465px;
+    margin-left: 180px;
+}
+.buttn{
+    background: #FF6861;
+    border-radius: 100px;
+    font-weight: 700;
+    line-height: 1.40em;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 22px 70px;
+    display: block;
+    width: 221px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.buttn:hover{
+    background-color: #d75a54af;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 82px;
+    justify-content: space-between;
+}
+
+.feaures_containers{
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    width: 720px;
+    margin: 70px 195px ;
+}
+
+.feature{
+    display: flex;
+    gap: 34px;
+    align-items: center;
+}
+.feature-digit{
+    width: 73px;
+    height: 73px;
+}
+.feature-title{
+    font-size: 30px;
+    margin-bottom: 11px;
+}
+.action-wrap{
+    background: linear-gradient(102deg, #FFF6DF 17.38%, #FFDFDE 81.25%);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    padding: 76px 101px 75px 122px;
+    gap: 101px;
+    justify-content: center;
+    
+
+}
+.action .hero-text{
+    width: 475px;
+}
+
+.hero-text .intro{
+    margin: 30px 0;
+    width: 360px;
+}
+.action-wrap .hero-text h2{
+    text-align: left;
+    margin-bottom: 0;
+    width: 371px;
+}
+.footer{
+    padding: 120px 0;
+}
+.credits{
+    font-size: 15px;
+    text-align: center;
+}
+@keyframes rotate{
+    
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+.action-wrap img{
+
+animation: 5s linear 0s normal none infinite running rotate;
+}
+/*Responsive*/
+/*Large: 992px-1199px*/
+@media (max-width: 1199px) {
+    .container{
+        max-width: 960px;
+    }
+}
+/*Large: 768px-991px*/
+@media (max-width: 991px) {
+    .container{
+        max-width: 720px;
+    }
+    .logo img{
+        display: block;
+        margin: 0 auto;
+    }
+    .wrapper{
+        flex-direction: column-reverse;
+    }
+    .hero-image {
+        margin: 0 auto;
+    }
+    .buttn{
+        margin: 0 auto;
+    }
+    .hero-text {
+        
+        text-align: center;
+        padding: 51px 0;
+    }
+    .hero-text .intro{
+        margin: 30px auto;
+        width: 720px;
+    }
+    .feaures_containers {
+        margin: 70px 0;
+    }
+    .action-wrap{
+        flex-direction: column;
+        padding: 101px 144px;
+    }
+    .action-wrap .hero-text .intro{
+        width: 340px;
+        text-align: center;
+    }
+    .action-wrap .hero-text h2{
+        text-align: center;
+        margin: auto;
+    }
+    
+
+}
+/*Large: 576px-767px*/
+@media (max-width: 767px) {
+    .container{
+        max-width: 540px;
+    }
+    .hero-image{
+        width: 320px;
+        display: block;
+    }
+    h1 {
+        
+        width: 320px;
+    }
+    .wrapper .hero-text .intro{
+        width: 320px;
+    }
+    .feature{
+        flex-direction: column;
+        text-align: center;
+    }
+    .feaures_containers{
+        width: auto;
+    }
+    .action-wrap{
+        gap: 50px;
+    }
+    
+}
+/*Extra small: 0px (320px) - 575px*/
+@media (max-width: 575xp) {
+    .container{
+        padding: 0 15px;
+    }
+    .hero-text{
+        width: auto;
+    }
+    h2{
+        width: 320px;
+        height: 112px;
+    }
+    .feature {
+        width: 320px;
+    }
+    .action-wrap img{
+        width: 201px;
+    }
+    .action-wrap{
+        padding: 70px 20px;
+    }
+    .action-wrap .hero-text{
+        width: 100%;
+    }
+    .action-wrap .intro{
+        width: auto;
+    }
+    section {
+        padding-top: 90px;
+    }
+    .footer{
+        padding: 90px 0;
+    }
+    .wrapper{
+        margin-top: 50px;
+    }
+}
